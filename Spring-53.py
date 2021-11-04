@@ -1509,16 +1509,28 @@ class compression:
 
                                                          #32 bit 33 bit 31 bit
 
-                                                         
+                                                         #print(sda10)
                                                          PI_take=str(PI)
 
-                                                         N3 = PI_take[N1:N1+5]
+                                                        
+
+                                                         if sda10[0:19]=="0000000000000000000": 
+                                                             N3 = PI_take[N1:N1+1]
+                                                         else:
+                                                             N3 = PI_take[N1:N1+5]
                                                          N3=int(N3)
                                                          
-
+                                                         N4=bin(N3)[2:]
+                                                         
+                                                         N7=len(N4)
+                                                         
 
                                                         
-                                                         N4=bin(N3)[2:]
+                                                             
+
+                                                             
+                                                         
+                                                         
 
                                                          lenf=len(N4)
                                                                  
@@ -1623,12 +1635,11 @@ class compression:
                                            if lenf2!=32:
                                                   sda17=sda17+sda10
                                                   
-                                           if N3<0 and lenf2==32 or N5!=9 and lenf2==32 and N5!=8 and N5!=7 and N5!=6 and N5!=9 and N5!=10 or N7!=5 and lenf2==32 :
-                                                         sda17=sda17+"0"+sda10
+                                          
                                         
                                                          
                                                          
-                                           elif N3<=(2*24)-1 and lenf2==32 and N5==10 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==9 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==8 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
+                                           elif N3<=(2*24)-1 and lenf2==32 and N7==1 or N3<=(2*24)-1 and lenf2==32 and N5==10 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==9 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==8 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
 
                                                          N4=bin(N3)[2:]
                                                          
@@ -1644,6 +1655,11 @@ class compression:
                                                                              szx2="0"+szx2
                                                                              z=z+1
                                                          sda17=sda17+"1"+szx2+N4
+
+
+                                           else:
+                                                if lenf2==32:
+                                                         sda17=sda17+"0"+sda10
 
 
                                            ei=ei+32
