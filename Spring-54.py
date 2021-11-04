@@ -1640,7 +1640,7 @@ class compression:
                                         
                                                          
                                                          
-                                           elif N3<=(2*24)-1 and lenf2==32 and N7==1 or N3<=(2*24)-1 and lenf2==32 and N5==10 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==9 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==8 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
+                                           elif N3<=(2*23)-1 and lenf2==32 and N7==1 or N3<=(2*23)-1 and lenf2==32 and N5==10 and N7==5 or N3<=(2*23)-1 and lenf2==32 and N5==9 and N7==5 or N3<=(2*23)-1 and lenf2==32 and N5==8 and N7==5 or N3<=(2*23)-1 and lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
                          		      
                 
                                                          N4=bin(N3)[2:]
@@ -1668,7 +1668,7 @@ class compression:
                                                          sda17=sda17+"1"+bit+szx2+N4
 
 
-                                           else:
+                                           if N3>(2*23)-1 and lenf2==32:
                                                 if lenf2==32:
                                                          sda17=sda17+"0"+sda10
 
