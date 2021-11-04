@@ -1,8 +1,6 @@
 # Spring-53
 Spring-53
 
-Spring 48
-
 Spring
 
 Speed: 100Bytes/s
