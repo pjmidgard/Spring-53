@@ -1649,8 +1649,10 @@ class compression:
 
                                                          lenf=len(N4)
                                                          
-                                                         if N3<=(2*23)-1 and lenf2==32:	
+                                                         if N3<=(2*23)-1 and lenf2==32 and N7!=5 and N7!=1:	
                                                          	N=23
+                                                         	bit="1"
+                         
 
                                                                  
                                                          szx2=""
@@ -1661,8 +1663,7 @@ class compression:
                                                                       while z<xc:
                                                                              szx2="0"+szx2
                                                                              z=z+1
-                                                         if N3<=(2*23)-1 and lenf2==32:	
-                                                                                         															 bit=="1"
+                            	                     															 
                              
                                                          sda17=sda17+"1"+bit+szx2+N4
 
