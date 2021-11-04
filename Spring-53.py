@@ -1517,6 +1517,7 @@ class compression:
                                                          if sda10[0:19]=="0000000000000000000": 
                                                              N3 = PI_take[N1:N1+1]
                                                          else:
+                                                             
                                                              N3 = PI_take[N1:N1+5]
                                                          N3=int(N3)
                                                          
@@ -1524,14 +1525,6 @@ class compression:
                                                          
                                                          N7=len(N4)
                                                          
-
-                                                        
-                                                             
-
-                                                             
-                                                         
-                                                         
-
                                                          lenf=len(N4)
                                                                  
                                                          szx2=""
@@ -1639,7 +1632,7 @@ class compression:
                                         
                                                          
                                                          
-                                           elif N3<=(2*24)-1 and lenf2==32 and N7==1 or N3<=(2*24)-1 and lenf2==32 and N5==10 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==9 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==8 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
+                                           elif N3<=(2*24)-1 and lenf2==32 and N3>=0 or N3<=(2*24)-1 and lenf2==32 and N7==1 or N3<=(2*24)-1 and lenf2==32 and N5==10 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==9 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==8 and N7==5 or N3<=(2*24)-1 and lenf2==32 and N5==7 and N7==5 or lenf2==32 and N5==6 and N7==5:
 
                                                          N4=bin(N3)[2:]
                                                          
